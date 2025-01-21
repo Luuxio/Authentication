@@ -83,7 +83,7 @@ Le code HTML pour les pages de connexion et d'inscription est directement inspir
 ## Structure du projet
 
 Voici la structure des fichiers du projet :
-
+```
 /authentication-page 
 │ 
 ├── /public 
@@ -97,7 +97,7 @@ Voici la structure des fichiers du projet :
 ├── app.js # Code principal de l'application (Express) 
 ├── package.json # Dépendances et scripts du projet 
 └── README.md # Ce fichier
-
+```
 ## Auteurs
 
 - **Luuxio_** - Créateur du projet
