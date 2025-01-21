@@ -1,0 +1,47 @@
+<!-- /public/protected.html -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte protégée</title>
+
+    <!-- Inclure le CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <style>
+        /* Définir la taille de la carte */
+        #map {
+            height: 400px;
+            /* Vous pouvez ajuster la hauteur de la carte ici */
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Carte protégée</h1>
+
+    <div id="map"></div>
+
+    <!-- Inclure le JavaScript de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script>
+        // Créer une carte centrée sur Paris, avec un niveau de zoom de 13
+        var map = L.map('map').setView([48.8566, 2.3522], 13); // [latitude, longitude]
+
+        // Ajouter un fond de carte de type "TileLayer"
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Ajouter un marqueur sur la carte
+        var marker = L.marker([48.8566, 2.3522]).addTo(map)
+            .bindPopup("<b>Paris</b><br>C'est ici que je me trouve.")
+            .openPopup();
+    </script>
+</body>
+
+</html>
