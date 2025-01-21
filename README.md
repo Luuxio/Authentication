@@ -23,8 +23,8 @@ Ce projet est une page d'authentification réalisée avec **Node.js**, **Express
 
 1. Clonez ce repository sur votre machine locale :
     ```bash
-    git clone https://github.com/votre-utilisateur/authentication-page.git
-    cd authentication-page
+    git clone https://github.com/Luuxio/Authentication.git
+    cd Authentication
     ```
 
 2. Installez les dépendances du projet :
